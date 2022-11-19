@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --reignPrimaryBG: #c4c4c4;
+  --bostonPrimaryBG: #174b97;
+  --chengduPrimaryBG: #ffa000;
+  --dallasPrimaryBG: #032340;
+  --floridaPrimaryBG: #000000;
+  --chargePrimaryBG: #122c42;
+  --sparkPrimaryBG: #fb7299;
+  --houstonPrimaryBG: #000000;
+  --londonPrimaryBG: #59cbe8;
+  --gladiatorsPrimaryBG: #3c1053;
+  --valiantPrimaryBG: #1888c6;
+  --nyxlPrimaryBG: #1c1c1c;
+  --eternalPrimaryBG: #303d56;
+  --fusionPrimaryBG: #000000;
+  --shockPrimaryBG: #000000;
+  --seoulPrimaryBG: #000000;
+  --dragonsPrimaryBG: #d22630;
+  --defiantPrimaryBG: #000000;
+  --vancouverPrimaryBG: #09226b;
+  --justicePrimaryBG: #990034;
+}
+
+html {
+  @apply bg-slate-800 text-neutral-200;
+}
+
+.reignBG {
+  background-color: var(--reignPrimaryBG);
+}
+
+.bostonBG {
+  background-color: var(--bostonPrimaryBG);
+}
+
+.chengduBG {
+  background-color: var(--chengduPrimaryBG);
+}
+
+.dallasBG {
+  background-color: var(--dallasPrimaryBG);
+}
+
+.floridaBG {
+  background-color: var(--floridaPrimaryBG);
+}
+
+.chargeBG {
+  background-color: var(--chargePrimaryBG);
+}
+
+.houstonBG {
+  background-color: var(--houstonPrimaryBG);
+}
+
+.londonBG {
+  background-color: var(--londonPrimaryBG);
+}
+
+.gladiatorsBG {
+  background-color: var(--gladiatorsPrimaryBG);
+}
+
+.valiantBG {
+  background-color: var(--valiantPrimaryBG);
+}
+
+.nyxlBG {
+  background-color: var(--nyxlPrimaryBG);
+}
+
+.eternalBG {
+  background-color: var(--eternalPrimaryBG);
+}
+
+.fusionBG {
+  background-color: var(--fusionPrimaryBG);
+}
+
+.sparkBG {
+  background-color: var(--sparkPrimaryBG);
+}
+
+.shockBG {
+  background-color: var(--shockPrimaryBG);
+}
+
+.seoulBG {
+  background-color: var(--seoulPrimaryBG);
+}
+
+.dragonsBG {
+  background-color: var(--dragonsPrimaryBG);
+}
+
+.defiantBG {
+  background-color: var(--defiantPrimaryBG);
+}
+
+.titansBG {
+  background-color: var(--vancouverPrimaryBG);
+}
+
+.justiceBG {
+  background-color: var(--justicePrimaryBG);
+}
