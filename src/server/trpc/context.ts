@@ -16,7 +16,7 @@ type CreateContextOptions = Record<string, never>;
  **/
 export const createContextInner = async (opts: CreateContextOptions) => {
   const base = new Airtable({ apiKey: env.AIRTABLE_API_KEY }).base(
-    "appHBuznDUPqcloyw"
+    env.AIRTABLE_BASE_ID
   );
   return {
     base,

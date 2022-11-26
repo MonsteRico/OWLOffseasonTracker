@@ -8,6 +8,7 @@ import { z } from "zod";
 export const serverSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]),
   AIRTABLE_API_KEY: z.string(),
+  AIRTABLE_BASE_ID: z.string(),
 });
 
 /**
