@@ -1,109 +1,320 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "OverwatchFont";
+  src: url("../fonts/big_noodle_titling.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OverwatchItalicFont";
+  src: url("../fonts/big_noodle_titling_oblique.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --reignPrimaryBG: #c4c4c4;
-  --bostonPrimaryBG: #174b97;
-  --chengduPrimaryBG: #ffa000;
-  --dallasPrimaryBG: #032340;
-  --floridaPrimaryBG: #000000;
-  --chargePrimaryBG: #122c42;
-  --sparkPrimaryBG: #fb7299;
-  --houstonPrimaryBG: #000000;
-  --londonPrimaryBG: #59cbe8;
-  --gladiatorsPrimaryBG: #3c1053;
-  --valiantPrimaryBG: #1888c6;
-  --nyxlPrimaryBG: #1c1c1c;
-  --eternalPrimaryBG: #303d56;
-  --fusionPrimaryBG: #000000;
-  --shockPrimaryBG: #000000;
-  --seoulPrimaryBG: #000000;
-  --dragonsPrimaryBG: #d22630;
-  --defiantPrimaryBG: #000000;
-  --vancouverPrimaryBG: #09226b;
-  --justicePrimaryBG: #990034;
+  --ATLPrimaryBG: #c4c4c4;
+  --BOSPrimaryBG: #174b97;
+  --CHDPrimaryBG: #ffa000;
+  --DALPrimaryBG: #032340;
+  --FLMPrimaryBG: #000000;
+  --GZCPrimaryBG: #122c42;
+  --HZSPrimaryBG: #fb7299;
+  --HOUPrimaryBG: #000000;
+  --LDNPrimaryBG: #59cbe8;
+  --LAGPrimaryBG: #3c1053;
+  --LAVPrimaryBG: #1888c6;
+  --NYXPrimaryBG: #171c38;
+  --PARPrimaryBG: #303d56;
+  --PHIPrimaryBG: #000000;
+  --SFSPrimaryBG: #000000;
+  --SEOPrimaryBG: #000000;
+  --SHDPrimaryBG: #d22630;
+  --TORPrimaryBG: #000000;
+  --VANPrimaryBG: #09226b;
+  --WASPrimaryBG: #990034;
+  --ATLAccent: #910f1b;
+  --BOSAccent: #ffffff;
+  --CHDAccent: #ffffff;
+  --DALAccent: #0172ce;
+  --FLMAccent: #cf4691;
+  --GZCAccent: #68a2b2;
+  --HZSAccent: #ffffff;
+  --HOUAccent: #97d724;
+  --LDNAccent: #000000;
+  --LAGAccent: #ffffff;
+  --LAVAccent: #ffd129;
+  --NYXAccent: #0f57ea;
+  --PARAccent: #8d042d;
+  --PHIAccent: #f99d2a;
+  --SFSAccent: #a5acaf;
+  --SEOAccent: #ac8a18;
+  --SHDAccent: #000000;
+  --TORAccent: #ffffff;
+  --VANAccent: #2eb228;
+  --WASAccent: #ffffff;
 }
 
 html {
-  @apply bg-slate-800 text-neutral-200;
+  @apply text-neutral-200;
 }
 
-.reignBG {
-  background-color: var(--reignPrimaryBG);
+h1 {
+  font-family: "OverwatchItalicFont";
 }
 
-.bostonBG {
-  background-color: var(--bostonPrimaryBG);
+body {
+  background-color: #222222;
 }
 
-.chengduBG {
-  background-color: var(--chengduPrimaryBG);
+main {
+  transition: all 0.25s linear;
 }
 
-.dallasBG {
-  background-color: var(--dallasPrimaryBG);
+a {
+  @apply underline hover:opacity-50;
 }
 
-.floridaBG {
-  background-color: var(--floridaPrimaryBG);
+.ATLText {
+  color: var(--ATLPrimaryBG);
 }
 
-.chargeBG {
-  background-color: var(--chargePrimaryBG);
+.BOSText {
+  color: var(--BOSPrimaryBG);
 }
 
-.houstonBG {
-  background-color: var(--houstonPrimaryBG);
+.CHDText {
+  color: var(--CHDPrimaryBG);
 }
 
-.londonBG {
-  background-color: var(--londonPrimaryBG);
+.DALText {
+  color: var(--DALPrimaryBG);
 }
 
-.gladiatorsBG {
-  background-color: var(--gladiatorsPrimaryBG);
+.FLMText {
+  color: var(--FLMPrimaryBG);
 }
 
-.valiantBG {
-  background-color: var(--valiantPrimaryBG);
+.GZCText {
+  color: var(--GZCPrimaryBG);
 }
 
-.nyxlBG {
-  background-color: var(--nyxlPrimaryBG);
+.HOUText {
+  color: var(--HOUPrimaryBG);
 }
 
-.eternalBG {
-  background-color: var(--eternalPrimaryBG);
+.LDNText {
+  color: var(--LDNPrimaryBG);
 }
 
-.fusionBG {
-  background-color: var(--fusionPrimaryBG);
+.LAGText {
+  color: var(--LAGPrimaryBG);
 }
 
-.sparkBG {
-  background-color: var(--sparkPrimaryBG);
+.LAVText {
+  color: var(--LAVPrimaryBG);
 }
 
-.shockBG {
-  background-color: var(--shockPrimaryBG);
+.NYXText {
+  color: var(--NYXPrimaryBG);
 }
 
-.seoulBG {
-  background-color: var(--seoulPrimaryBG);
+.PARText {
+  color: var(--PARPrimaryBG);
 }
 
-.dragonsBG {
-  background-color: var(--dragonsPrimaryBG);
+.PHIText {
+  color: var(--PHIPrimaryBG);
 }
 
-.defiantBG {
-  background-color: var(--defiantPrimaryBG);
+.HZSText {
+  color: var(--HZSPrimaryBG);
 }
 
-.titansBG {
-  background-color: var(--vancouverPrimaryBG);
+.SFSText {
+  color: var(--SFSPrimaryBG);
 }
 
-.justiceBG {
-  background-color: var(--justicePrimaryBG);
+.SEOText {
+  color: var(--SEOPrimaryBG);
+}
+
+.SHDText {
+  color: var(--SHDPrimaryBG);
+}
+
+.TORText {
+  color: var(--TORPrimaryBG);
+}
+
+.VANText {
+  color: var(--VANPrimaryBG);
+}
+
+.WASText {
+  color: var(--WASPrimaryBG);
+}
+
+.ATLBG {
+  background-color: var(--ATLPrimaryBG);
+}
+
+.BOSBG {
+  background-color: var(--BOSPrimaryBG);
+}
+
+.CHDBG {
+  background-color: var(--CHDPrimaryBG);
+}
+
+.DALBG {
+  background-color: var(--DALPrimaryBG);
+}
+
+.FLMBG {
+  background-color: var(--FLMPrimaryBG);
+}
+
+.GZCBG {
+  background-color: var(--GZCPrimaryBG);
+}
+
+.HOUBG {
+  background-color: var(--HOUPrimaryBG);
+}
+
+.LDNBG {
+  background-color: var(--LDNPrimaryBG);
+}
+
+.LAGBG {
+  background-color: var(--LAGPrimaryBG);
+}
+
+.LAVBG {
+  background-color: var(--LAVPrimaryBG);
+}
+
+.NYXBG {
+  background-color: var(--NYXPrimaryBG);
+}
+
+.PARBG {
+  background-color: var(--PARPrimaryBG);
+}
+
+.PHIBG {
+  background-color: var(--PHIPrimaryBG);
+}
+
+.HZSBG {
+  background-color: var(--HZSPrimaryBG);
+}
+
+.SFSBG {
+  background-color: var(--SFSPrimaryBG);
+}
+
+.SEOBG {
+  background-color: var(--SEOPrimaryBG);
+}
+
+.SHDBG {
+  background-color: var(--SHDPrimaryBG);
+}
+
+.TORBG {
+  background-color: var(--TORPrimaryBG);
+}
+
+.VANBG {
+  background-color: var(--VANPrimaryBG);
+}
+
+.WASBG {
+  background-color: var(--WASPrimaryBG);
+}
+
+.ATLAccent {
+  background-color: var(--ATLAccent);
+}
+
+.BOSAccent {
+  background-color: var(--BOSAccent);
+}
+
+.CHDAccent {
+  background-color: var(--CHDAccent);
+}
+
+.DALAccent {
+  background-color: var(--DALAccent);
+}
+
+.FLMAccent {
+  background-color: var(--FLMAccent);
+}
+
+.GZCAccent {
+  background-color: var(--GZCAccent);
+}
+
+.HOUAccent {
+  background-color: var(--HOUAccent);
+}
+
+.LDNAccent {
+  background-color: var(--LDNAccent);
+}
+
+.LAGAccent {
+  background-color: var(--LAGAccent);
+}
+
+.LAVAccent {
+  background-color: var(--LAVAccent);
+}
+
+.NYXAccent {
+  background-color: var(--NYXAccent);
+}
+
+.PARAccent {
+  background-color: var(--PARAccent);
+}
+
+.PHIAccent {
+  background-color: var(--PHIAccent);
+}
+
+.HZSAccent {
+  background-color: var(--HZSAccent);
+}
+
+.SFSAccent {
+  background-color: var(--SFSAccent);
+}
+
+.SEOAccent {
+  background-color: var(--SEOAccent);
+}
+
+.SHDAccent {
+  background-color: var(--SHDAccent);
+}
+
+.TORAccent {
+  background-color: var(--TORAccent);
+}
+
+.VANAccent {
+  background-color: var(--VANAccent);
+}
+
+.WASAccent {
+  background-color: var(--WASAccent);
 }

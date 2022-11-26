@@ -2,6 +2,8 @@ import { type inferAsyncReturnType } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 
 import { prisma } from "../db/client";
+import Airtable from "airtable";
+import { env } from "../../env/server.mjs";
 
 /**
  * Replace this with an object if you want to pass things to createContextInner
@@ -14,8 +16,12 @@ type CreateContextOptions = Record<string, never>;
  * @see https://create.t3.gg/en/usage/trpc#-servertrpccontextts
  **/
 export const createContextInner = async (opts: CreateContextOptions) => {
+  const base = new Airtable({ apiKey: env.AIRTABLE_API_KEY }).base(
+    "appHBuznDUPqcloyw"
+  );
   return {
     prisma,
+    base,
   };
 };
 

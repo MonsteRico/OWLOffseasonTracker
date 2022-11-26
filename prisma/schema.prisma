@@ -15,3 +15,13 @@ model Example {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Player {
+  id        String   @id @default(cuid())
+  name      String
+  team      String
+  previousTeam String
+  role      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
