@@ -38,7 +38,7 @@ const TeamPage: NextPage = () => {
         <CoolButton
           className={team + "Accent w-32 hover:scale-95 " + team + "Text mb-4"}
           onClick={() => {
-            router.push("./main");
+            router.push("./");
           }}
         >
           Back
