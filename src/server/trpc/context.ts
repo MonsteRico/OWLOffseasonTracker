@@ -1,7 +1,6 @@
 import { type inferAsyncReturnType } from "@trpc/server";
 import { type CreateNextContextOptions } from "@trpc/server/adapters/next";
 
-import { prisma } from "../db/client";
 import Airtable from "airtable";
 import { env } from "../../env/server.mjs";
 
@@ -20,7 +19,6 @@ export const createContextInner = async (opts: CreateContextOptions) => {
     "appHBuznDUPqcloyw"
   );
   return {
-    prisma,
     base,
   };
 };

@@ -12,9 +12,6 @@ export const teamRouter = router({
         greeting: `Hello ${input?.text ?? "world"}`,
       };
     }),
-  getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.player.findMany();
-  }),
   getPlayers: publicProcedure
     .input(z.string().nullish())
     .query(async ({ ctx, input }) => {
