@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
 import BOS from "../logos/boston.png";
 import GZC from "../logos/charge.png";
 import CHD from "../logos/chengdu.png";
@@ -6,7 +6,7 @@ import DAL from "../logos/dallas.png";
 import TOR from "../logos/defiant.png";
 import SHD from "../logos/dragons.png";
 import PAR from "../logos/eternal.png";
-import FLM from "../logos/floridaPLACEHOLDER.png";
+import FLM from "../logos/florida.png";
 import PHI from "../logos/fusion.png";
 import LAG from "../logos/gladiators.png";
 import HOU from "../logos/houston.png";
@@ -15,10 +15,10 @@ import LDN from "../logos/london.png";
 import NYX from "../logos/nyxl.png";
 import ATL from "../logos/reign.png";
 import SEO from "../logos/seoul.png";
-import SFS from "../logos/shockPLACEHOLDER.png";
+import SFS from "../logos/shock.png";
 import HZS from "../logos/spark.png";
 import VAN from "../logos/titans.png";
-import LAV from "../logos/valiantPLACEHOLDER.png";
+import LAV from "../logos/valiant.png";
 export default function getTeamLogo(team: string): StaticImageData {
   switch (team) {
     case "BOS":

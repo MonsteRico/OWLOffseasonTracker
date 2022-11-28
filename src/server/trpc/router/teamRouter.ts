@@ -1,5 +1,3 @@
-import { FieldSet } from "airtable/lib/field_set";
-import { Records } from "airtable/lib/records";
 import { z } from "zod";
 
 import { router, publicProcedure } from "../trpc";

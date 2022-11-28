@@ -14,7 +14,8 @@ type CreateContextOptions = Record<string, never>;
  * - trpc's `createSSGHelpers` where we don't have req/res
  * @see https://create.t3.gg/en/usage/trpc#-servertrpccontextts
  **/
-export const createContextInner = async (opts: CreateContextOptions) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const createContextInner = async (_opts: CreateContextOptions) => {
   const base = new Airtable({ apiKey: env.AIRTABLE_API_KEY }).base(
     env.AIRTABLE_BASE_ID
   );
@@ -27,6 +28,7 @@ export const createContextInner = async (opts: CreateContextOptions) => {
  * This is the actual context you'll use in your router
  * @link https://trpc.io/docs/context
  **/
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createContext = async (opts: CreateNextContextOptions) => {
   return await createContextInner({});
 };

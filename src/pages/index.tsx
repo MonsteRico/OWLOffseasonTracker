@@ -1,17 +1,9 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
 
 import TeamLogo from "./TeamLogo";
 
-import { trpc } from "../utils/trpc";
-import { useState } from "react";
-import { useRouter } from "next/router";
-
 const Home: NextPage = () => {
-  const router = useRouter();
   return (
     <>
       <Head>

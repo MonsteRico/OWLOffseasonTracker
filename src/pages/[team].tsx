@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
 import getTeamName from "../utils/getTeamName";
 import { trpc } from "../utils/trpc";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
@@ -10,18 +9,13 @@ import CoolButton from "./CoolButton";
 const TeamPage: NextPage = () => {
   const router = useRouter();
   const { team } = router.query as { team: string };
-  const [parent, enableAnimations] = useAutoAnimate<HTMLTableSectionElement>();
+  const [parent] = useAutoAnimate<HTMLTableSectionElement>();
 
-  const [parent2, enableAnimations2] =
-    useAutoAnimate<HTMLTableSectionElement>();
+  const [parent2] = useAutoAnimate<HTMLTableSectionElement>();
 
   const teamName = getTeamName(team);
   const currentRoster = trpc.team.getPlayers.useQuery(team);
   const previousPlayers = trpc.team.getPreviousPlayers.useQuery(team);
-  let lightAccent = false;
-  if (team === "boston" || team === "defiant") {
-    lightAccent = true;
-  }
 
   return (
     <>
@@ -93,7 +87,7 @@ const TeamPage: NextPage = () => {
                 : null}
             </tbody>
           </table>
-          <h1 className="text-4xl">Previous Players</h1>
+          <h1 className="text-4xl">2022 Players</h1>
           <table className={"m-4 flex table w-1/2 text-center md:w-3/4"}>
             <thead className={team + "Accent border-b " + team + "Text"}>
               <tr>
