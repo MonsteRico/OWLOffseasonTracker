@@ -59,7 +59,7 @@ export default function getTeamName(team: string): string {
       teamName = "Hangzhou Spark";
       break;
     case "VAN":
-      teamName = "Vancover Titans";
+      teamName = "Vancouver Titans";
       break;
     case "Retired":
       teamName = "Retired";

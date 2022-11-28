@@ -87,7 +87,7 @@ const TeamPage: NextPage = () => {
                 : null}
             </tbody>
           </table>
-          <h1 className="text-4xl">2022 Players</h1>
+          <h1 className="text-4xl">2022 Roster</h1>
           <table className={"m-4 flex table w-1/2 text-center md:w-3/4"}>
             <thead className={team + "Accent border-b " + team + "Text"}>
               <tr>

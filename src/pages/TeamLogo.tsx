@@ -44,7 +44,14 @@ export default function TeamLogo({ team }: TeamLogoProps) {
         src={getTeamLogo(team)}
         className="transition duration-300 ease-in-out group-hover:scale-110"
       />
-      <h1 className="hidden p-4 text-center md:block xl:block">{teamName}</h1>
+      <h1
+        className={
+          (teamName == "Atlanta Reign" ? "text-slate-800 " : "") +
+          "hidden p-4 text-center text-xl md:block xl:block"
+        }
+      >
+        {teamName}
+      </h1>
     </div>
   );
 }
