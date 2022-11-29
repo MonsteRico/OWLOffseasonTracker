@@ -19,7 +19,10 @@ const Home: NextPage = () => {
           <h1 className="py-5 md:text-2xl lg:text-4xl xl:text-6xl">
             OWL Offseason Tracker
           </h1>
-          <p>A joint effort between u/Mon5terRico and u/UnknownQTY</p>
+          <p>
+            A joint effort between u/Mon5terRico, u/UnknownQTY, and
+            u/Fun-Injury5925
+          </p>
           <div className="flex w-full flex-row items-center justify-evenly pb-10">
             <a href="https://github.com/MonsteRico/OWLOffseasonTracker">
               GitHub
