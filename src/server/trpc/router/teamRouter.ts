@@ -30,7 +30,10 @@ export const teamRouter = router({
         .eachPage(function page(records, fetchNextPage) {
           // This function (`page`) will get called for each page of records.
           records.forEach(function (record) {
-            if (record.get("2023 Team") === input) {
+            if (
+              record.get("2023 Team") === input ||
+              (input === "SIN" && record.get("2023 Team") === "PHI")
+            ) {
               const player = {
                 id: record.id,
                 role: record.get("2023 Role") as string,
@@ -76,7 +79,10 @@ export const teamRouter = router({
         .eachPage(function page(records, fetchNextPage) {
           // This function (`page`) will get called for each page of records.
           records.forEach(function (record) {
-            if (record.get("2022 Team") === input) {
+            if (
+              record.get("2022 Team") === input ||
+              (input === "SIN" && record.get("2022 Team") === "PHI")
+            ) {
               const player = {
                 id: record.id,
                 role: record.get("2022 Role") as string,

@@ -61,6 +61,7 @@ export default function getTeamLogo(team: string): StaticImageData {
       return NYX;
 
     case "SIN":
+    case "PHI":
       return SIN;
 
     case "LAV":
