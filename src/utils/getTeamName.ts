@@ -40,8 +40,8 @@ export default function getTeamName(team: string): string {
     case "NYX":
       teamName = "New York Excelsior";
       break;
-    case "PHI":
-      teamName = "Philadelphia Fusion";
+    case "SIN":
+      teamName = "Seoul Infernal";
       break;
     case "LAV":
       teamName = "Los Angeles Valiant";

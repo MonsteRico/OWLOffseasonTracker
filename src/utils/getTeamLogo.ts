@@ -7,7 +7,7 @@ import TOR from "../logos/defiant.png";
 import SHD from "../logos/dragons.png";
 import PAR from "../logos/eternal.png";
 import FLM from "../logos/florida.png";
-import PHI from "../logos/fusion.png";
+import SIN from "../logos/infernal.png";
 import LAG from "../logos/gladiators.png";
 import HOU from "../logos/houston.png";
 import WAS from "../logos/justice.png";
@@ -60,8 +60,8 @@ export default function getTeamLogo(team: string): StaticImageData {
     case "NYX":
       return NYX;
 
-    case "PHI":
-      return PHI;
+    case "SIN":
+      return SIN;
 
     case "LAV":
       return LAV;

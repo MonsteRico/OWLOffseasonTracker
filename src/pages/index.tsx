@@ -53,7 +53,7 @@ const Home: NextPage = () => {
           <TeamLogo team="WAS" />
           <TeamLogo team="LDN" />
           <TeamLogo team="NYX" />
-          <TeamLogo team="PHI" />
+          <TeamLogo team="SIN" />
           <TeamLogo team="PAR" />
           <TeamLogo team="SFS" />
           <TeamLogo team="SEO" />
