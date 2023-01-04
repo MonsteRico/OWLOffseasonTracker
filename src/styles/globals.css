@@ -29,7 +29,7 @@
   --LAGPrimaryBG: #3c1053;
   --LAVPrimaryBG: #1888c6;
   --NYXPrimaryBG: #171c38;
-  --PARPrimaryBG: #303d56;
+  --LVEPrimaryBG: #ffffff;
   --SINPrimaryBG: #cf2c36;
   --SFSPrimaryBG: #000000;
   --SEOPrimaryBG: #000000;
@@ -49,7 +49,7 @@
   --LAGAccent: #ffffff;
   --LAVAccent: #ffd129;
   --NYXAccent: #0f57ea;
-  --PARAccent: #8d042d;
+  --LVEAccent: #ee7623;
   --SINAccent: #b09a79;
   --SFSAccent: #a5acaf;
   --SEOAccent: #ac8a18;
@@ -123,8 +123,8 @@ a {
   color: var(--NYXPrimaryBG);
 }
 
-.PARText {
-  color: var(--PARPrimaryBG);
+.LVEText {
+  color: var(--LVEPrimaryBG);
 }
 
 .SINText {
@@ -203,8 +203,8 @@ a {
   background-color: var(--NYXPrimaryBG);
 }
 
-.PARBG {
-  background-color: var(--PARPrimaryBG);
+.LVEBG {
+  background-color: var(--LVEPrimaryBG);
 }
 
 .SINBG {
@@ -283,8 +283,8 @@ a {
   background-color: var(--NYXAccent);
 }
 
-.PARAccent {
-  background-color: var(--PARAccent);
+.LVEAccent {
+  background-color: var(--LVEAccent);
 }
 
 .SINAccent {

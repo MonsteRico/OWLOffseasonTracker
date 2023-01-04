@@ -46,8 +46,9 @@ export default function TeamLogo({ team }: TeamLogoProps) {
       />
       <h1
         className={
-          (teamName == "Atlanta Reign" ? "text-slate-800 " : "") +
-          "hidden p-4 text-center text-xl md:block xl:block"
+          (teamName == "Atlanta Reign" || teamName == "Las Vegas Eternal"
+            ? "text-slate-800 "
+            : "") + "hidden p-4 text-center text-xl md:block xl:block"
         }
       >
         {teamName}

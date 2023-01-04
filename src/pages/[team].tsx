@@ -16,13 +16,18 @@ const TeamPage: NextPage = () => {
   const teamName = getTeamName(team);
   const currentRoster = trpc.team.getPlayers.useQuery(team);
   const previousPlayers = trpc.team.getPreviousPlayers.useQuery(team);
-
+  const extraStyling = `h1 { color: ${
+    teamName == "Atlanta Reign" || teamName == "Las Vegas Eternal"
+      ? "black"
+      : "white"
+  }; }`;
   return (
     <>
       <Head>
         <title></title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
+        <style>{extraStyling}</style>
       </Head>
 
       <main
