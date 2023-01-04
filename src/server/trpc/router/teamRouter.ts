@@ -32,7 +32,8 @@ export const teamRouter = router({
           records.forEach(function (record) {
             if (
               record.get("2023 Team") === input ||
-              (input === "SIN" && record.get("2023 Team") === "PHI")
+              (input === "SIN" && record.get("2023 Team") === "PHI") ||
+              (input === "LVE" && record.get("2022 Team") === "PAR")
             ) {
               const player = {
                 id: record.id,
@@ -81,7 +82,8 @@ export const teamRouter = router({
           records.forEach(function (record) {
             if (
               record.get("2022 Team") === input ||
-              (input === "SIN" && record.get("2022 Team") === "PHI")
+              (input === "SIN" && record.get("2022 Team") === "PHI") ||
+              (input === "LVE" && record.get("2022 Team") === "PAR")
             ) {
               const player = {
                 id: record.id,

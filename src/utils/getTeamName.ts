@@ -19,6 +19,7 @@ export default function getTeamName(team: string): string {
     case "SHD":
       teamName = "Shanghai Dragons";
       break;
+    case "LVE":
     case "PAR":
       teamName = "Las Vegas Eternal";
       break;
